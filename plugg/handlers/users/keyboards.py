@@ -2,7 +2,7 @@ import emoji
 from aiogram import types
 
 admin_btns = [
-    [types.KeyboardButton(text="Пoказать всех - show players")]
+    [types.KeyboardButton(text="пoказать всех")]
 ]
 
 user_btns = [
