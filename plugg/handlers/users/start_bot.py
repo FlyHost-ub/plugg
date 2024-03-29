@@ -24,12 +24,8 @@ JOINS = []
 BANS = {}
 kb_info = InlineKeyboardMarkup(row_width=1)
 kb_info.add(types.InlineKeyboardButton(
-    text=emoji.emojize(':thought_balloon:') + " Kritos vape " + emoji.emojize(':dashing_away:'),
-    url="https://t.me/+63FMRH_Xa8xkOTMy")
-)
-kb_info.add(types.InlineKeyboardButton(
-    text=emoji.emojize(':speech_balloon:') + " Наш чат " + emoji.emojize(':speech_balloon:'),
-    url="https://t.me/+xuvJD7adiu4zNDcy")
+    text=emoji.emojize(':thought_balloon:') + " vape.plugg " + emoji.emojize(':dashing_away:'),
+    url="https://t.me/+aVje6lH_n7U1YmQy")
 )
 
 kb_sorts = InlineKeyboardMarkup(row_width=1)
@@ -37,36 +33,76 @@ kb_sorts.add(types.InlineKeyboardButton(
     text=emoji.emojize(':red_paper_lantern:') + " Испарители",
     callback_data=f"evaporators~")
 )
-# kb_sorts.add(types.InlineKeyboardButton(
-#   text="Кальянное",
-#  callback_data=f"hookahs~")
-# )
-# kb_sorts.add(types.InlineKeyboardButton(
-#       text="Другое",
-#      callback_data=f"other~")
-# )
+ kb_sorts.add(types.InlineKeyboardButton(
+   text="Жидкости",
+  callback_data=f"hookahs~")
+ )
+ kb_sorts.add(types.InlineKeyboardButton(
+       text="Одноразки",
+      callback_data=f"other~")
+ )
 user_btns = types.ReplyKeyboardMarkup(keyboard=user_btns, resize_keyboard=True)
 
 price_list = [
     {
-        "text": "Pasito 2 (3шт)",
-        "price": 400
+        "text": "Vaparesso xros",
+        "price": 12
     },
     {
-        "text": "SANTY, ЧАРОН+ (3шт)",
-        "price": 300
+        "text": "Vaparesso osmall",
+        "price": 11
     },
     {
-        "text": "Boost Mesh (5 шт )-в упак, -0,4-0,6ohm",
-        "price": 350
+        "text": "Vaparesso barr",
+        "price": 11
     },
     {
-        "text": "Voopoo PNP 5шт 0.2 0.6",
-        "price": 300
+        "text": "Vaparesso luxe Q",
+        "price": 12
     },
     {
-        "text": "Jellybox Nano (3шт)",
-        "price": 300
+        "text": "Voopoo v.thru / vmate",
+        "price": 15
+    },
+    {
+        "text": "Voopoo drag nano",
+        "price": 11
+    },
+    {
+        "text": "Lost vape ursa baby / nano",
+        "price": 12
+    },
+    {
+        "text": "Pasito 1",
+        "price": 8
+    },
+    {
+        "text": "Charon baby, Battlestar, Veer",
+        "price": 8
+    },
+    {
+        "text": "Charon plus, Smoant santi, Knight 40,
+        "price": 10
+    },
+    {
+        "text": "Pasito 2, Knight 80",
+        "price": 9
+    },
+    {
+        "text": "Manto aio",
+        "price": 9
+    },
+    {
+        "text": "Jellybox nano, Jellybox xs",
+        "price": 9
+    },
+    {
+        "text": "Aegis hero, Aegis boost, Aegis boost +, Zeus nano, Zeus nano 2",
+        "price": 10
+    },
+    {
+        "text": "Drag baby, Find trio, Vinti, Vinti R, Vinti X, Pnp tank, Drag x, Drag s",
+        "price": 10
     }
 
 ]
