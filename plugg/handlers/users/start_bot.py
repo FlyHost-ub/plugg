@@ -81,7 +81,7 @@ price_list = [
         "price": 8
     },
     {
-        "text": "Charon plus, Smoant santi, Knight 40,
+        "text": "Charon plus, Smoant santi, Knight 40",
         "price": 10
     },
     {
