@@ -11,8 +11,8 @@ from utils.datbase import getNameById
 from utils.schemas import User
 from utils.sql_commands import select_users, delete_from_base
 
-textMailingDone = '<b>✅ Рассылка завершена!</b>\n\n'\
-                    '<b>✅ Mailing completed!</b>'
+textMailingDone = '<b> рассылка завершена!</b>\n\n'\
+                    '<b> mailing completed!</b>'
 
 
 async def send_help_message(message, name, text):
@@ -30,12 +30,12 @@ async def send_help_message(message, name, text):
                 delete_from_base(user.user_id, User)
 
 
-@dp.message_handler(text='Рассылка - mailing')
+@dp.message_handler(text='рассылка')
 async def mail(message: types.Message, state: FSMContext):
     if message.from_user.id in OFFICERS:
         await state.update_data(name=getNameById(message.from_user.id))
         await message.answer(
-            '💌 Отправьте сообщение / write message'
+            'отправь сообщение'
             )
         await Mail.mail.set()
 
@@ -122,6 +122,6 @@ async def mail_on(message: types.Message, state: FSMContext):
 
     else:
         await message.answer(
-            '<b>❗️ Данный формат контента не поддерживается для рассылки!</b>\n\n'\
-            "<b>❗️ Wrong format</b>"
+            '<b>данный формат контента не поддерживается для рассылки!</b>\n\n'\
+            "<b>wrong format</b>"
         )
